@@ -48,6 +48,8 @@ If you have LEDs or a Camera mounted to the underside of the Y-axis extrusions t
 | Superglue             |          | only for the 2-piece shroud                        |
 | VHB-Tape              |          | for extra mounting security if needed              |
 
+## Printed Parts
+You'll need to print 1 ``Clamp_Block.stl`` and either the ``Shroud_Unibody.stl`` if you have a large enough printer, or ``Shroud_2Piece_Bottom.stl`` and ``Shroud_2Piece_Top.stl`` if you print it on a V0-sized printer. 
 ## Assembly Instructions
 
 #### Remove the built-in Supports from the shroud:
