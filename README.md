@@ -71,7 +71,7 @@ You'll need to print 1 ``Clamp_Block.stl`` and either the ``Shroud_Unibody.stl``
 
 ![2 Piece Gluing location](images/Assembly_Shroud_2Part_Glue.png)
 
-#### Install Fan into shroud and secure with 2x M3x18 BHCS and one Washer each.
+#### Put the Fan into the shroud and secure with 2x M3x18 BHCS and one Washer each.
 
 ![Fan Installation](images/Assembly_Shroud_Fan.png)
 ![Fan Screws](images/Assembly_Shroud_Fan_Screws.png)
