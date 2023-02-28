@@ -94,6 +94,9 @@ Copy the included `aux_fan.cfg` to your klipper config folder and add `[include 
 
 Edit the `aux_fan.cfg` and replace the `PIN` in the `[fan_generic Aux_Fan]` section with the pin you have your fan connected to.
 
+Klipper does not support controlling aditional fans with ``M106`` and ``M107`` by default, so i added some replacement Macros wich include a selection parameter ``P`` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio controlls the auxilliary cooling fan.
+
+Be sure to add a ``M107`` or ``M106 P2 S0`` to either your ``PRINT_END``-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an ``M106 S0`` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
 ### Example: Fan connected to the Fan 3 Port (PB7) on an Mellow Fly E3 Pro v3:
 
 ```
@@ -125,14 +128,14 @@ If you are using Mainsail or Fluidd you should see an `Aux Fan` Slider right und
 ### Slicer
 
 There is no widespread support for auxilliary cooling fans in slicers.
-The only one i know of is [BambuStudio](https://github.com/bambulab/BambuStudio) and its Forks (e.g. [BambuStudio - SoftFever](https://github.com/SoftFever/BambuStudio-SoftFever)). The way BambuStudio controls the auxilliary cooling fan is by sending a `M106 P2 Sxxx`, where `xxx` is the speed on a scale of 0 to 255. If we check the Marlin Documentation we see that `P2` selects the fan with index number 2 to set the speed, however klipper does not support a index selection with `M106`, at least as far as i know.
+The only one i know of is [BambuStudio](https://github.com/bambulab/BambuStudio) and its Forks (e.g. [BambuStudio - SoftFever](https://github.com/SoftFever/BambuStudio-SoftFever)). The way BambuStudio controls the auxilliary cooling fan is by sending a `M106 P2 Sxxx`, where `xxx` is the speed on a scale of 0 to 255. That is why there is a included Macro for Klipper that allows this G-Code to function with klipper.
+#### BambuStudio
+In the ``Filament settings`` window in the ``Cooling section`` set the auxilliary Cooling fan speed to what you want. This will enable the fan to the set speed after the first layers where the partcooling fan is disabled.
+![BambuStudio Settings](images/BambuStudio_FanSetting.png)
 
-I have included a basic replacement Macro for `M106` in the `aux_fan.cfg`, which checks if the `P2` variable exists and then sets the auxilliary cooling fan speed. If there is no `P2` variable the default partcooling fan gets set instead.
-
-Also included is a `M107` replacement that just stops the auxilliary fan when a `P2` exists, else both partcooling and auxilliary fan get stopped.
-
-Be sure to add a ``M107`` or ``M106 P2 S0`` to either your ``PRINT_END``-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an ``M106 S0`` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
-
-
+#### BambuStudio - SoftFever
+In the ``Printer settings`` under ``Basic inormation`` enable the ``Auxilliary part cooling fan`` setting. Then in the ``Filament settings`` set the fan speed to your wanted speed (like with standard BambuStudio).
+![SoftFever PrinterSettings](images/SoftFever_PrinterSettings.png)
+![SoftFever FilamentSettings](images/SoftFever_FilamentSettings.png)
 ## Vibrations
 Because the shroud leans against the outside panel there could be some unwanted vibration noises. To lessen this you could add a bit of foam tape to the back of the shroud, however use thin foam tape to avoid the shroud leaning forward into the movement area of your toolhead.
