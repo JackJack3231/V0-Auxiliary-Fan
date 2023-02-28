@@ -6,7 +6,7 @@ Auxilliary Cooling Fan using a 5015 Blower Fan for the Voron V0 3d-Printers.
 
 The Shroud can be easily installed after the Printer has already been fully assembled, as it just slots into either the left or right bottom extrusion and gets clamped onto the extrusion. For added security you can use some VHB-Tape.
 
-The Shroud comes in 2 Versions: A Unibody Version for which you'll need a larger Printer as it is 170mm long. There is also a 2 Piece Version which you can print on a V0 and glue together after printing.
+The Shroud comes in 2 Versions: A Unibody Version for which you'll need a larger Printer as it is 170mm long and a 2 Piece Version which you can print on a V0 and glue together after printing.
 
 I have not done any CFD-Simulation on this shroud, so it definitely could be better, however it seems to work fine at providing some extra airflow while printing.
 
