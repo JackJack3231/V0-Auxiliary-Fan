@@ -99,7 +99,11 @@ Edit the `aux_fan.cfg` and replace the `PIN` in the `[fan_generic Aux_Fan]` sect
 Klipper does not support controlling aditional fans with ``M106`` and ``M107`` by default, so i added some replacement Macros wich include a selection parameter ``P`` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio controlls the auxilliary cooling fan.
 
 Be sure to add a ``M107`` or ``M106 P2 S0`` to either your ``PRINT_END``-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an ``M106 S0`` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
-### Example: Fan connected to the Fan 3 Port (PB7) on an Mellow Fly E3 Pro v3:
+
+The ``aux_fan.cfg`` also adds Controls for the auxilliary fan to the Display in the ``Control`` Mmnu, so you can also control the fan with an V0-Display.
+These new controls should appear right beneath the partcooling fan inputs, if they don't you might need to adjust the ``index`` value in ``aux_fan.cfg``.
+![DisplayEntries](images/Display.jpg)
+### Config-Example: Fan connected to the Fan 3 Port (PB7) on an Mellow Fly E3 Pro v3:
 
 ```
 ...
@@ -108,7 +112,7 @@ pin: PB7
 ...
 ```
 
-### Example: Fan controlled with MOSFET connected to GPIO13 on your Raspberry Pi and your Pi is configured in klipper with a `[mcu host]` section:
+### Config-Example: Fan controlled with MOSFET connected to GPIO13 on your Raspberry Pi and your Pi is configured in klipper with a `[mcu host]` section:
 
 ```
 ...
