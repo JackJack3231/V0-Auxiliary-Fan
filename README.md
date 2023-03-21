@@ -100,7 +100,7 @@ Klipper does not support controlling aditional fans with ``M106`` and ``M107`` b
 
 Be sure to add a ``M107`` or ``M106 P2 S0`` to either your ``PRINT_END``-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an ``M106 S0`` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
 
-The ``aux_fan.cfg`` also adds Controls for the auxilliary fan to the Display in the ``Control`` Mmnu, so you can also control the fan with an V0-Display.
+The ``aux_fan.cfg`` also adds Controls for the auxilliary fan to the Display in the ``Control`` Menu, so you can also control the fan with an V0-Display.
 These new controls should appear right beneath the partcooling fan inputs, if they don't you might need to adjust the ``index`` value in ``aux_fan.cfg``.
 ![DisplayEntries](images/Display.jpg)
 ### Config-Example: Fan connected to the Fan 3 Port (PB7) on an Mellow Fly E3 Pro v3:
@@ -134,7 +134,7 @@ If you are using Mainsail or Fluidd you should see an `Aux Fan` Slider right und
 ### Slicer
 
 There is no widespread support for auxilliary cooling fans in slicers.
-The only one i know of is [BambuStudio](https://github.com/bambulab/BambuStudio) and its Forks (e.g. [BambuStudio - SoftFever](https://github.com/SoftFever/BambuStudio-SoftFever)). The way BambuStudio controls the auxilliary cooling fan is by sending a `M106 P2 Sxxx`, where `xxx` is the speed on a scale of 0 to 255. That is why there is a included Macro for Klipper that allows this G-Code to function with klipper.
+The only one i know of is [BambuStudio](https://github.com/bambulab/BambuStudio) and its Forks (e.g. [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer)). The way BambuStudio controls the auxilliary cooling fan is by sending a `M106 P2 Sxxx`, where `xxx` is the speed on a scale of 0 to 255. That is why there is a included Macro for Klipper that allows this G-Code to function with klipper.
 #### BambuStudio
 In the ``Filament settings`` window in the ``Cooling section`` set the auxilliary Cooling fan speed to what you want. This will enable the fan to the set speed after the first layers where the partcooling fan is disabled.
 ![BambuStudio Settings](images/BambuStudio_FanSetting.png)
