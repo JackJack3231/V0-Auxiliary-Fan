@@ -8,7 +8,9 @@ The Shroud can be easily installed after the Printer has already been fully asse
 
 The Shroud comes in 2 Versions: A Unibody Version for which you'll need a larger Printer as it is 170mm long and a 2 Piece Version which you can print on a V0 and glue together after printing.
 
-I have not done any CFD-Simulation on this shroud, so it definitely could be better, however it seems to work fine at providing some extra airflow while printing.
+I have not done any CFD-Simulation on this shroud, so it definitely could be better.
+
+After some testing with PLA, the effective cooling area is only around 1/3rd of the the print-bed. I'm working on a new Version using a larger blower fan, however that will need some time, as I currently don't have any bigger blower fans.
 
 ## Stuff to keep in mind
 
