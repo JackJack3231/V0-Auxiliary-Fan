@@ -2,7 +2,7 @@
 ## PLA
 Test File: [Overhang Test by tomi3d](https://www.printables.com/model/126029-overhang-test)
 
-Test was run with around 100 mm/s for most features, so the Overhangs look pretty bad however this stressed cooling performance more. This also meant that the prints got knocked of the print bed before completeing because the nozzle crashed into curled up parts.
+Test was run with around 100 mm/s for most features, so the Overhangs look pretty bad however this stressed cooling performance more. This also meant that the prints got knocked of the print bed before completeing because the nozzle crashed into curled up parts. The Print with the aux fan on managed to print to the middle of the 60° Overhang, without the fan the print got knocked of at the middle of 50°.
 
 The Toolhead was the Mini-Stealthburner from the V0.2.
 
