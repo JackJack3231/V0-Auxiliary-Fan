@@ -12,6 +12,8 @@ I have not done any CFD-Simulation on this shroud, so it definitely could be bet
 
 After some testing with PLA, the effective cooling area is only around 1/3rd of the the print-bed. I'm working on a new Version using a larger blower fan, however that will need some time, as I currently don't have any bigger blower fans.
 
+### Overhang Test
+For Comparision Pictures of the cooling Performance of the Auxilliary fan check the [Overhang Tests](OverhangTests.md) Document.
 ## Stuff to keep in mind
 
 ### Connecting the fan
