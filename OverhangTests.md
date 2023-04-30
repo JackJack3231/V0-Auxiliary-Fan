@@ -8,11 +8,15 @@ The Toolhead was the Mini-Stealthburner from the V0.2.
 
 Nozzle-Temperature 205°C, Part-Cooling-Fan (Toolhead) 100% fixed.
 
-Pictured is only the arc that was facing the aux fan, as the other ones aren't really affected by the aux fan. The 5015 Blower fan does not have enough power to have a meaningful impact over the whole print area, or the fan duct is designed really inefficiently.
+Pictured are the arcs that were facing the aux fan as well as the rear of the printer, as the other ones aren't really affected by the aux fan. The 5015 Blower fan does not have enough power to have a meaningful impact over the whole print area, or the fan duct is designed really inefficiently.
 
 As you can see from the pictures without a fan the curling starts at around 30° overhang, with the aux fan at 100% curling starts at 40° overhang.
 
+### Fan Side Images
 ![Aux Fan Off](images/tests/NoFanFront.png)
 ![Aux Fan On](images/tests/YesFanFront.png)
 ![Aux Fan Off Angled](images/tests/NoFanAngle.png)
 ![Aux Fan On Angled](images/tests/YesFanAngle.png)
+
+### Rear Image
+![Rear Comparision](images/tests/Rear.png)
