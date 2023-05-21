@@ -1,19 +1,31 @@
 # V0 Auxilliary Cooling Fan
 
-Auxilliary Cooling Fan using a 5015 Blower Fan for the Voron V0 3d-Printers.
+Auxilliary Cooling Fan Ducts for the Voron V0 3d-Printers, using either a 5015, 6028, 7530, 9733 or 12032 Blower Fan.
 
-![Auxilliary Fan installed](images/Assembled.png)
+Below the 5015 Fan and duct installed in a v0.2
+![5015 Fan installed](images/Assembled.png)
 
-The Shroud can be easily installed after the Printer has already been fully assembled, as it just slots into either the left or right bottom extrusion and gets clamped onto the extrusion. For added security you can use some VHB-Tape.
+The Shrouds can be easily installed after the Printer has already been fully assembled, as they just slot into either the left or right bottom extrusion and get clamped onto the extrusion. For added security you can use some VHB-Tape.
 
-The Shroud comes in 2 Versions: A Unibody Version for which you'll need a larger Printer as it is 170mm long and a 2 Piece Version which you can print on a V0 and glue together after printing.
+The Shrouds come in 2 Versions: A Unibody Version for which you'll need a larger Printer as it is 170mm long and a 2 Piece Version which you can print on a V0 and glue together after printing.
 
-I have not done any CFD-Simulation on this shroud, so it definitely could be better.
+I have not done any CFD-Simulation on these shrouds, so they definitely could be better.
 
-After some testing with PLA, the effective cooling area is only around 1/3rd of the the print-bed. I'm working on a new Version using a larger blower fan, however that will need some time, as I currently don't have any bigger blower fans.
+Currently there are ducts for the following Blower Fan sizes available:
+
+- [50x15mm](ducts/5015/)
+- [60x28mm](ducts/6028/)
+- [75x30mm](ducts/7530/)
+- [97x33mm](ducts/9733/)
+- [120x32mm](ducts/12032/)
 
 ### Overhang Test
-For Comparision Pictures of the cooling Performance of the Auxilliary fan check the [Overhang Tests](OverhangTests.md) Document.
+
+For Comparision Pictures of the cooling Performance check the [Overhang Tests](OverhangTests.md) Document.
+
+## Print Settings
+As these parts don't hold any high loads you don't have to print these according to the Voron Guidelines. 3 Perimeters with 25% Infill are more than enough.
+
 ## Stuff to keep in mind
 
 ### Connecting the fan
@@ -42,55 +54,7 @@ If you have LEDs or a Camera mounted to the underside of the Y-axis extrusions t
 
 ## BOM
 
-| Part                  | Quantity | Notes                                              |
-| --------------------- | -------- | -------------------------------------------------- |
-| M3x5x4 Heatset Insert | 5        |                                                    |
-| 5015 Blower Fan       | 1        | 5V or 24V depending on your setup                  |
-| M3x16 BHCS            | 3        |                                                    |
-| M3x18 BHCS            | 2        |                                                    |
-| M3 Washer             | 2        | optional, only to make better contact with the fan |
-| Superglue             |          | only for the 2-piece shroud                        |
-| VHB-Tape              |          | for extra mounting security if needed              |
-
-## Printed Parts
-You'll need to print 1 ``Clamp_Block.stl`` and either the ``Shroud_Unibody.stl`` if you have a large enough printer, or ``Shroud_2Piece_Bottom.stl`` and ``Shroud_2Piece_Top.stl`` if you print it on a V0-sized printer. 
-## Assembly Instructions
-
-#### Remove the built-in Supports from the shroud:
-
-- Unibody Version
-  ![unibody](images/Assembly_Shroud_Support.png)
-- 2 Piece Version:
-  ![2 Piece Bottom](images/Assembly_Shroud_2Part_Supports.png)
-
-#### Insert 2x Heatsets For the fan from the front. **CAUTION** the printed part is 5mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
-
-![Heatset Locations for Fan](images/Assembly_Shroud_Heatsets_Front.png)
-
-#### Insert 3x Heatsets for the clamping-block into the shroud from the back.
-
-![Heatset Location for Clamp](images/Assembly_Shroud_Heatsets_Back.png)
-
-#### 2 Piece Version only: Apply Glue to the outside surfaces of the bottom part duct and glue the two pieces together.
-
-![2 Piece Gluing location](images/Assembly_Shroud_2Part_Glue.png)
-
-#### Put the Fan into the shroud and secure with 2x M3x18 BHCS and one Washer each.
-
-![Fan Installation](images/Assembly_Shroud_Fan.png)
-![Fan Screws](images/Assembly_Shroud_Fan_Screws.png)
-
-#### Slide the shroud into the frame on whichever side you prefer.
-
-![Shroud in Frame](images/Assembly_Shroud_Frame.png)
-
-#### Attach the clamp-block with 3x M3x16 BHCS and clamp the shroud to the bottom extrusion. **Afterwards check that your Toolhead does not collide with the Shroud when it's all the way to the right!**
-
-![Clamp](images/Assembly_Clamp.png)
-
-#### You can route the fan wires through the top slot of the extrusion past the electronics panel to the electronics compartment and hook up the fan.
-
-![Wire Path](images/Assembly_Wire_Frame.png)
+See the specific README of each version for a list of required parts:
 
 ## Klipper Configuration
 
@@ -100,13 +64,14 @@ Copy the included `aux_fan.cfg` to your klipper config folder and add `[include 
 
 Edit the `aux_fan.cfg` and replace the `PIN` in the `[fan_generic Aux_Fan]` section with the pin you have your fan connected to.
 
-Klipper does not support controlling aditional fans with ``M106`` and ``M107`` by default, so i added some replacement Macros wich include a selection parameter ``P`` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio controlls the auxilliary cooling fan.
+Klipper does not support controlling aditional fans with `M106` and `M107` by default, so i added some replacement Macros wich include a selection parameter `P` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio controlls the auxilliary cooling fan.
 
-Be sure to add a ``M107`` or ``M106 P2 S0`` to either your ``PRINT_END``-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an ``M106 S0`` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
+Be sure to add a `M107` or `M106 P2 S0` to either your `PRINT_END`-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an `M106 S0` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
 
-The ``aux_fan.cfg`` also adds Controls for the auxilliary fan to the Display in the ``Control`` Menu, so you can also control the fan with an V0-Display.
-These new controls should appear right beneath the partcooling fan inputs, if they don't you might need to adjust the ``index`` value in ``aux_fan.cfg``.
+The `aux_fan.cfg` also adds Controls for the auxilliary fan to the Display in the `Control` Menu, so you can also control the fan with an V0-Display.
+These new controls should appear right beneath the partcooling fan inputs, if they don't you might need to adjust the `index` value in `aux_fan.cfg`.
 ![DisplayEntries](images/Display.jpg)
+
 ### Config-Example: Fan connected to the Fan 3 Port (PB7) on an Mellow Fly E3 Pro v3:
 
 ```
@@ -139,13 +104,18 @@ If you are using Mainsail or Fluidd you should see an `Aux Fan` Slider right und
 
 There is no widespread support for auxilliary cooling fans in slicers.
 The only one i know of is [BambuStudio](https://github.com/bambulab/BambuStudio) and its Forks (e.g. [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer)). The way BambuStudio controls the auxilliary cooling fan is by sending a `M106 P2 Sxxx`, where `xxx` is the speed on a scale of 0 to 255. That is why there is a included Macro for Klipper that allows this G-Code to function with klipper.
+
 #### BambuStudio
-In the ``Filament settings`` window in the ``Cooling section`` set the auxilliary Cooling fan speed to what you want. This will enable the fan to the set speed after the first layers where the partcooling fan is disabled.
+
+In the `Filament settings` window in the `Cooling section` set the auxilliary Cooling fan speed to what you want. This will enable the fan to the set speed after the first layers where the partcooling fan is disabled.
 ![BambuStudio Settings](images/BambuStudio_FanSetting.png)
 
-#### BambuStudio - SoftFever
-In the ``Printer settings`` under ``Basic inormation`` enable the ``Auxilliary part cooling fan`` setting. Then in the ``Filament settings`` set the fan speed to your wanted speed (like with standard BambuStudio).
+#### OrcaSlicer
+
+In the `Printer settings` under `Basic inormation` enable the `Auxilliary part cooling fan` setting. Then in the `Filament settings` set the fan speed to your wanted speed (like with standard BambuStudio).
 ![SoftFever PrinterSettings](images/SoftFever_PrinterSettings.png)
 ![SoftFever FilamentSettings](images/SoftFever_FilamentSettings.png)
+
 ## Vibrations
+
 Because the shroud leans against the outside panel there could be some unwanted vibration noises. To lessen this you could add a bit of foam tape to the back of the shroud, however use thin foam tape to avoid the shroud leaning forward into the movement area of your toolhead.
