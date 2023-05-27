@@ -1,5 +1,7 @@
 # 7530 Blower Fan Duct
 
+![7530 Duct Assembled](images/Assembled.png)
+
 ## BOM
 
 | Part                  | Quantity | Notes                                              |

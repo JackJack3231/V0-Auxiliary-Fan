@@ -1,5 +1,7 @@
 # 12032 Blower Fan Duct
 
+![12032 Duct Assembled](images/Assembled.png)
+
 ## BOM
 
 | Part                  | Quantity | Notes                                              |
@@ -30,9 +32,11 @@ You'll need to print 1 [12032_Clamp.stl](STL/12032_Clamp.stl), 1 [12032_Shroud_B
   ![Bottom Support](images/Support_Bottom.png)
 
 #### Insert 9x Heatsets For the fan from the front. **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
+
 ![Heatsets Front](images/Heatsets_Front.png)
 
 #### Insert 3x Heatsets For the clamp from the back.
+
 ![Heatsets Back](images/Heatsets_Back.png)
 
 #### Secure the fan with 3x M3x8 BHCS and a Washer in the corners and 6x M3x35 BHCS and a Washer in the rest of the fan mounting holes.

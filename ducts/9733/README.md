@@ -1,5 +1,7 @@
 # 9733 Blower Fan Duct
 
+![9733 Duct Assembled](images/Assembled.png)
+
 ## BOM
 
 | Part                  | Quantity | Notes                                              |

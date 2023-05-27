@@ -1,5 +1,7 @@
 # 6028 Blower Fan Duct
 
+![6028 Duct Assembled](images/Assembled.png)
+
 ## BOM
 
 | Part                  | Quantity | Notes                                              |

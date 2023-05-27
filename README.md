@@ -1,6 +1,7 @@
 # V0 Auxilliary Cooling Fan
 
 Auxilliary Cooling Fan Ducts for the Voron V0 3d-Printers, using either a 5015, 6028, 7530, 9733 or 12032 Blower Fan.
+![Lineup of all Ducts](images/Lineup%20v2.png)
 
 Below the 5015 Fan and duct installed in a v0.2
 ![5015 Fan installed](images/Assembled.png)
@@ -24,6 +25,7 @@ Currently there are ducts for the following Blower Fan sizes available:
 For Comparision Pictures of the cooling Performance check the [Overhang Tests](OverhangTests.md) Document.
 
 ## Print Settings
+
 As these parts don't hold any high loads you don't have to print these according to the Voron Guidelines. 3 Perimeters with 25% Infill are more than enough.
 
 ## Stuff to keep in mind
@@ -54,7 +56,7 @@ If you have LEDs or a Camera mounted to the underside of the Y-axis extrusions t
 
 ## BOM
 
-See the specific README of each version for a list of required parts:
+See the specific README of each version for a list of required parts.
 
 ## Klipper Configuration
 

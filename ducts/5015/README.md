@@ -1,5 +1,7 @@
 # 5015 Blower Fan Duct
 
+![5015 Duct Assembled](images/Assembled.png)
+
 ## BOM
 
 | Part                  | Quantity | Notes                                              |
