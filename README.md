@@ -20,6 +20,10 @@ Currently there are ducts for the following Blower Fan sizes available:
 - [97x33mm](ducts/9733/)
 - [120x32mm](ducts/12032/)
 
+### Warning
+
+There seems to be quite a bit of variance in the exact mounting hole patterns on these blower fans, especially the larger ones. So you could run into compatibility issues and need to adjust the model in CAD. I used GDSTIME fans for all my tests so these should work.
+
 ### Overhang Test
 
 For Comparision Pictures of the cooling Performance check the [Overhang Tests](OverhangTests.md) Document.
