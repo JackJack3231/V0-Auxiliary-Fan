@@ -37,4 +37,17 @@ You'll need to print 1x[7530_Clamp.stl](STL/7530_Clamp.stl), 2x[7530_spacer_1.6m
 
 ![Bottom Glue Faces](images/Glue_2Part.png)
 
-#### The remaining steps are the same as for the [5015 duct](/ducts/5015/README.md#insert-2x-heatsets-for-the-fan-from-the-front-caution-the-printed-part-is-4mm-thick-so-the-heatset-is-exactly-the-same-length-as-the-part-dont-push-the-heatset-through-by-accident), except that you use M3x35 BHCS with the printed spacers to secure the fan.
+#### Insert 2x Heatsets for the fan from the front. **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
+
+![Heatset Locations for Fan](images/7530_Heatsets_Front.png)
+
+#### Insert 3x Heatsets for the clamping-block into the shroud from the back.
+
+![Heatset Location for Clamp](images/7530_Heatsets_Rear.png)
+
+#### Put the Fan into the shroud and secure with 2x M3x35 BHCS and one of the printed spacers each.
+
+![Fan Installation](images/7530_Fan_Insert.png)
+![Fan Screws](images/7530_Fan_Screws.png)
+
+#### Insert the shroud into the bottom extrusion of your printer and clamp it down with the clamp block and 3x M3x16BHCS. If you want add some VHB-Tape to the bottom of the shroud. For reference see the [5015 duct](/ducts/5015/README.md#slide-the-shroud-into-the-frame-on-whichever-side-you-prefer-align-it-with-the-center-of-the-print-bed) Assembly instructions

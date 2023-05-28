@@ -31,7 +31,7 @@ You'll need to print 1 [5015_Clamp_Block.stl](STL/5015_Clamp_Block.stl) and eith
 - 2 Piece Version:
   ![2 Piece Bottom](images/Assembly_Shroud_2Part_Supports.png)
 
-#### Insert 2x Heatsets For the fan from the front. **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
+#### Insert 2x Heatsets for the fan from the front. **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
 
 ![Heatset Locations for Fan](images/Assembly_Shroud_Heatsets_Front.png)
 

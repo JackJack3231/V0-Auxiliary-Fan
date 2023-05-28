@@ -31,14 +31,25 @@ You'll need to print 1 [12032_Clamp.stl](STL/12032_Clamp.stl), 1 [12032_Shroud_B
 - Bottom:
   ![Bottom Support](images/Support_Bottom.png)
 
-#### Insert 9x Heatsets For the fan from the front. **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
+#### Insert 3x Heatsets for the fan into the top part from the front . **CAUTION** the printed part is 4mm thick, so the Heatset is exactly the same length as the part. Don't push the Heatset through by accident.
 
-![Heatsets Front](images/Heatsets_Front.png)
+![Heatset Locations for Fan](images/12032_Heatsets_Top.png)
 
-#### Insert 3x Heatsets For the clamp from the back.
+#### Insert 6x Heatsets for the fan into the bottom part from the front.
 
-![Heatsets Back](images/Heatsets_Back.png)
+![Heatset Locations for Fan](images/12032_Heatsets_Bottom_Front.png)
 
-#### Secure the fan with 3x M3x8 BHCS and a Washer in the corners and 6x M3x35 BHCS and a Washer in the rest of the fan mounting holes.
+#### Insert 3x Heatsets for the clamping-block into the bottom part from the back.
 
-#### The remaining steps are the same as for the [5015 duct](/ducts/5015/README.md#slide-the-shroud-into-the-frame-on-whichever-side-you-prefer).
+![Heatset Location for Clamp](images/12032_Heatsets_Bottom_Rear.png)
+
+#### Put the Fan into the top part and secure with 3x M3x8 BHCS and one washer each in the corners to both the top and bottom part.
+
+![Fan Installation](images/12032_Fan_Insert.png)
+![Fan Screws Corner](images/12032_Fan_Screws_Corner.png)
+
+#### Secure the Fan with 6x M3x35 BHCS and a washer each in the remaining mounting holes
+
+![Fan Screws](images/12032_Screws_Fan.png)
+
+#### Insert the shroud into the bottom extrusion of your printer and clamp it down with the clamp block and 3x M3x16BHCS. If you want add some VHB-Tape to the bottom of the shroud. For reference see the [5015 duct](/ducts/5015/README.md#slide-the-shroud-into-the-frame-on-whichever-side-you-prefer-align-it-with-the-center-of-the-print-bed) Assembly instructions

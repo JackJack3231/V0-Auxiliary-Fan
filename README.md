@@ -1,10 +1,10 @@
 # V0 Auxilliary Cooling Fan
 
 Auxilliary Cooling Fan Ducts for the Voron V0 3d-Printers, using either a 5015, 6028, 7530, 9733 or 12032 Blower Fan.
-![Lineup of all Ducts](images/Lineup%20v2.png)
+![Lineup of all Ducts](images/Lineup%20v2_red.png)
 
 Below the 5015 Fan and duct installed in a v0.2
-![5015 Fan installed](images/Assembled.png)
+![5015 Fan installed](images/Assembled_red.png)
 
 The Shrouds can be easily installed after the Printer has already been fully assembled, as they just slot into either the left or right bottom extrusion and get clamped onto the extrusion. For added security you can use some VHB-Tape.
 
