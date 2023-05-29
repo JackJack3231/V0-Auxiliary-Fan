@@ -70,7 +70,7 @@ Copy the included `aux_fan.cfg` to your klipper config folder and add `[include 
 
 Edit the `aux_fan.cfg` and replace the `PIN` in the `[fan_generic Aux_Fan]` section with the pin you have your fan connected to.
 
-Klipper does not support controlling aditional fans with `M106` and `M107` by default, so i added some replacement Macros wich include a selection parameter `P` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio controlls the auxilliary cooling fan.
+Klipper does not support controlling aditional fans with `M106` and `M107` by default, so i added some replacement Macros wich include a selection parameter `P` kinda like [Marlin](https://marlinfw.org/docs/gcode/M106.html) does. Index 2 gets matched to the Auxilliary cooling fan, because that is how BambuStudio and its forks (e.g. OrcaSlicer) control the auxilliary cooling fan.
 
 Be sure to add a `M107` or `M106 P2 S0` to either your `PRINT_END`-macro or in the end-gcode of your slicer to make sure that the auxilliary fan and partcooling fan stops. Often there is only an `M106 S0` executed at the end, which only turns off the partcooling fan but not the Auxilliary fan.
 
