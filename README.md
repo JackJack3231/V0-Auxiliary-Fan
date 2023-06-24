@@ -125,3 +125,6 @@ In the `Printer settings` under `Basic inormation` enable the `Auxilliary part c
 ## Vibrations
 
 Because the shroud leans against the outside panel there could be some unwanted vibration noises. To lessen this you could add a bit of foam tape to the back of the shroud, however use thin foam tape to avoid the shroud leaning forward into the movement area of your toolhead.
+
+## Changelog
+- 2023-06-24: Add centered Top Part for the 12032 Duct for better alignment when installed on the left side of the printer. Deprecated old version.
