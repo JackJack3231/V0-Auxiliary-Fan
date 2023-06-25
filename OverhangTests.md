@@ -1,7 +1,7 @@
 # Overhang Test (05-2023)
 - Test File: [Overhang Test by tomi3d](https://www.printables.com/model/126029-overhang-test)
 - Filament: PLA - [Redline Filament Yellow](https://www.redline-filament.com/collections/pla-filament/products/premium-pla-gelb)
-- Printer: V0.2 with Mini-Stealthburner. Enclosure on, Door open, Tophat closed
+- Printer: V0.2 with original (Pre r1) Mini-Stealthburner. Enclosure on, Door open, Tophat closed
 - Auxilliary Fan was installed on the right side of the printer
 - Sliced with OrcaSlicer, same G-Code for all prints only the fan was swapped out or unplugged. PartCooling and Auxilliary Fan were set to 100% after the 3rd layer. Settings are at the [end of this document](#print-settings)
 
