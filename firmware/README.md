@@ -1,0 +1,1 @@
+Refer to the [Firmware and Slicer Configuration](/docs/firmware_slicer.md) documentation for installation and usage instructions.
