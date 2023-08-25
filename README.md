@@ -96,6 +96,9 @@ Following Fan Models were used in CAD:
 
 ## Changelog
 
+### 2023-08-25
+- Add experimental 5015 & 6028 duct with clearance for klicky probes
+
 ### 2023-08-15 R1 Release
 
 - Remade all ducts to make CAD cleaner, wallthicknesses more consistent and the design more consistent overall
