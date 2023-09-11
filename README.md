@@ -32,9 +32,11 @@ Currently there are ducts for the following Blower Fan sizes available:
 
 There also are ducts that target their airflow 3mm lower than the MiniSB for people using higher flow toolheads where the nozzle sits slightly lower in the [UHF Folder](ducts/_UHF/)
 
-### Warning
+### Warning about Tolerances
 
 There seems to be quite a bit of variance in the exact mounting hole patterns on these blower fans, especially the larger ones. So you could run into compatibility issues and need to adjust the model in CAD. I used GDSTIME fans for all my tests so these should work.
+
+Additionally the width of the slots on the MakerBeamXL or LDO Extrusions can vary a lot. These generally are specced at 3-3.2mm wide. The ducts were designed with a 3.2mm thick part that slots into the extrusion. This was made to ensure a snug fit, however on some frames it could be very difficult/impossible to slot in. So either you can just print it and sand down the bottom part if needed or measure your frame before printing and adjust in CAD for the measured slot thickness.
 
 ### Overhang Test
 
@@ -97,6 +99,7 @@ Following Fan Models were used in CAD:
 ## Changelog
 
 ### 2023-08-25
+
 - Add experimental 5015 & 6028 duct with clearance for klicky probes
 
 ### 2023-08-15 R1 Release
@@ -121,7 +124,7 @@ Changes made to ducts to improve cooling performance:
 
 All had slight changes to the internal flow guide geometry to (hopefully) improve cooling performance.
 
-Known Issue: The 7530 duct still has higher airflow at the left side than on the right side, at least at 100% speed. Will need to rework the internal flow guides some time in the future. 
+Known Issue: The 7530 duct still has higher airflow at the left side than on the right side, at least at 100% speed. Will need to rework the internal flow guides some time in the future.
 
 ### 2023-06-24
 

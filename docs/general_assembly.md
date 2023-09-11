@@ -55,6 +55,7 @@ These Instructions will guide you through the installation process. The assembly
 
 ### 9. Insert the duct into the bottom extrusion and align it with the center of the bed
 
+**Tolerances:** If the fit is too tight and you can't get the duct in the extrusion, sand the bottom part that slots into the extrusion down a bit and try again.
 ![Duct into Frame Installation](images/assembly_instructions/13_Duct_Into_Frame.png)
 
 ### 10. Secure the duct to the bottom extrusion with the mount of your choice
