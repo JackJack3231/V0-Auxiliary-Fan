@@ -20,19 +20,19 @@ Overall I would say the 75x30mm fan provides a good enough performance for the b
 The 50x15mm fan doesn't perform very well, however it still improves the overhang-performance by around 10° and chances are generally quite high that 3d-printer builders have some of these lying around already so you might just try it. Also there have been some people putting one fan on each side of the printer and beeing quite happy with the improved cooling, however I have not tested this configuration yet. 
 ### No Fan
 Popped of the bed in the middle of 60°.
-![Aux Fan Off](images/tests/NoFan.png)
+![Aux Fan Off](images/overhang_tests/NoFan.png)
 
 ### 5015 Fan
 Tested Fan: [GDSTIME 5015 24V Dual Ball Bearing Blower Fan](https://www.aliexpress.com/item/32865977791.html)
 
 Arc facing to the left snapped off at the beginning of 70°, the rest printed succesfully. The broken arc was glued back on for easier comparison pictures.
-![Rear Comparision](images/tests/5015.png)
+![Rear Comparision](images/overhang_tests/5015.png)
 
 ### 6028 Fan
 Tested Fan: [GDSTIME 6028 24V Dual Ball Bearing Blower Fan](https://www.aliexpress.com/item/1005003792895461.html)
 
 Popped of the bed and snapped of the rear facing arc at the beginning of 70°. The broken arc was glued back on for easier comparison pictures.
-![Rear Comparision](images/tests/6028.png)
+![Rear Comparision](images/overhang_tests/6028.png)
 
 ### 7530 Fan
 Tested Fan: [GDSTIME 7530 24V Dual Ball Bearing Blower Fan](https://www.aliexpress.com/item/1005002663971820.html)
@@ -40,24 +40,24 @@ Tested Fan: [GDSTIME 7530 24V Dual Ball Bearing Blower Fan](https://www.aliexpre
 Popped of the bed and snapped of the left facing arc at the beginning of 60°. The broken arc was glued back on for easier comparison pictures.
 
 While this print failed before most of the others the overhangs look quite a bit better than the ones of the smaller fans.
-![Rear Comparision](images/tests/7530.png)
+![Rear Comparision](images/overhang_tests/7530.png)
 
 ### 9733 Fan
 Tested Fan: [GDSTIME 9733 24V Dual Ball Bearing Blower Fan](https://www.aliexpress.com/item/32622626365.html)
 
 Popped of the bed and snapped of the rear facing arc at the beginning of 70°. The broken arc was glued back on for easier comparison pictures.
-![Rear Comparision](images/tests/9733.png)
+![Rear Comparision](images/overhang_tests/9733.png)
 
 ### 12032 Fan
 Tested Fan: [GDSTIME 12032 24V Dual Ball Bearing Blower Fan](https://www.aliexpress.com/item/1005005288258849.html)
 
 Managed to print all the way without a catastrophic failure.
-![Rear Comparision](images/tests/12032.png)
+![Rear Comparision](images/overhang_tests/12032.png)
 
 ## Print Settings
 The following Settings were used in OrcaSlicer to generate the G-Code
-![Filament Cooling](images/tests/settings_filament_2.png)
-![Filament Settings](images/tests/settings_filament_1.png)
-![Print Strength](images/tests/settings_strength.png)
-![Print Speed](images/tests/settings_speed.png)
+![Filament Cooling](images/overhang_tests/settings_filament_2.png)
+![Filament Settings](images/overhang_tests/settings_filament_1.png)
+![Print Strength](images/overhang_tests/settings_strength.png)
+![Print Speed](images/overhang_tests/settings_speed.png)
 
