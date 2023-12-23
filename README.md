@@ -32,6 +32,8 @@ Currently, there are ducts for the following Blower Fan sizes available:
 
 There also are ducts that target their airflow 3 mm lower than the MiniSB for people using higher flow toolheads where the nozzle sits slightly lower in the [UHF Folder](ducts/_UHF/). **This is not required for High-Flow setups that don't change the nozzle height like chirpy's [Rapid Burner](https://github.com/chirpy2605/voron/tree/main/V0/Rapid_Burner)**.
 
+I also started adding ducts, that I was requested to make for specific setups, to the repo. You will find these in the [Customs Folder](/ducts/_Customs/).
+
 ### Warning about Tolerances
 
 There seems to be quite a bit of variance in the exact mounting hole patterns on these blower fans, especially the larger ones. So you could run into compatibility issues and need to adjust the model in CAD. I used GDSTIME fans for all my tests, so these should work.
@@ -97,6 +99,11 @@ Following Fan Models were used in CAD:
 - [CBM-A232B-120-457](https://www.cuidevices.com/product/thermal-management/dc-fans/centrifugal-blowers/cbm-a232b-120-457) by CUI Devices
 
 ## Changelog
+
+### 2023-12-23
+
+- Updated slot-bar to be a bit flexible and increase compatibility with different extrusion slot widths, while still providing some stiffness
+- Added first custom duct model for the Hex-Zero with a 75x30 mm blower
 
 ### 2023-08-25
 
