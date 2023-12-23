@@ -6,7 +6,7 @@
 
 | Part                  | Quantity | Notes                                              |
 | --------------------- | -------- | -------------------------------------------------- |
-| M3x5x4 Heatset Insert | 9       |                                                    |
+| M3x5x4 Heatset Insert | 9        |                                                    |
 | 12032 Blower Fan      | 1        | 5V or 24V depending on your setup                  |
 | M3x8 BHCS             | 3        |                                                    |
 | M3x35 BHCS            | 6        |                                                    |

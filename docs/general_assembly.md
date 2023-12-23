@@ -48,14 +48,14 @@ These Instructions will guide you through the installation process. The assembly
 
 ### 7. Remove the side panel from your V0 for easier access and installation of the duct. This is not strictly needed, but will make installation a lot easier.
 
-### 8. If you want to use the Top Twist mounts it is recommended to insert them now and push them to the side so they're out of the way for the next step. Insert the Mount and turn them 90° to lock them in place. Do this for both top mounts.
+### 8. If you want to use the Top Twist mounts it is recommended to insert them now and push them to the side, so they're out of the way for the next step. Insert the Mount and turn them 90° to lock them in place. Do this for both top mounts.
 
 ![Top Twist Mount Insert](images/assembly_instructions/11_Twist_Top_1.png)
 ![Top Twist Mount Turn](images/assembly_instructions/12_Twist_Top_2.png)
 
 ### 9. Insert the duct into the bottom extrusion and align it with the center of the bed
 
-**Tolerances:** If the fit is too tight and you can't get the duct in the extrusion, sand the bottom part that slots into the extrusion down a bit and try again.
+**Tolerances:** If the fit is too tight, and you can't get the duct in the extrusion, sand the bottom part that slots into the extrusion down a bit and try again.
 ![Duct into Frame Installation](images/assembly_instructions/13_Duct_Into_Frame.png)
 
 ### 10. Secure the duct to the bottom extrusion with the mount of your choice
@@ -76,13 +76,13 @@ These Instructions will guide you through the installation process. The assembly
 
 #### Twist Mount: Slide/Wiggle the Top Mounts to the duct and press them against the duct so the VHB sticks the parts together
 
-![Twist MOunt Top Attach](images/assembly_instructions/17_Twist_Top_Attach.png)
+![Twist Mount Top Attach](images/assembly_instructions/17_Twist_Top_Attach.png)
 
 #### Screw Mount: Attach the Mounts to the duct with the VHB Tape and secure them to the extrusion with 2 M3x6 BHCS
 
 ![Screw Mount Top](images/assembly_instructions/18_Screw_Top.png)
 
-### 12. Route the wires throught the top slot of the bottom extrusion to the electronics compartment.
+### 12. Route the wires through the top slot of the bottom extrusion to the electronics compartment.
 
 ![Wire Routing](images/assembly_instructions/19_Extrusion_Wire.png)
 

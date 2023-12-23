@@ -1,6 +1,6 @@
 # Documentation
 
-In this folder you will find some general documentation, that has been split into extra files to keep the Readme files to a reasonable Length.
+In this folder you will find some general documentation, that has been split into extra files to keep the README files to a reasonable Length.
 
 ## Current Documentation
 
