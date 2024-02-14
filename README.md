@@ -100,6 +100,9 @@ Following Fan Models were used in CAD:
 
 ## Changelog
 
+### 2024-02-14
+- Add 12032 Hex-Zero variant
+
 ### 2023-12-23
 
 - Updated slot-bar to be a bit flexible and increase compatibility with different extrusion slot widths, while still providing some stiffness

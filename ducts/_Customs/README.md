@@ -10,3 +10,4 @@ BOM is generally the same as the standard versions unless specifically called ou
 | Printer/Setup                             | Notes                                                        | Link to Printer                                                 |
 | ----------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
 | [75x30 mm for Hex-Zero](Hex-Zero/7530/) | Designed only for the right side, as left has the Probe Dock | [Hex-Zero GitHub](https://github.com/Alexander-T-Moss/Hex-Zero) |
+| [120x32 mm for Hex-Zero](Hex-Zero/12032/) | Designed only for the right side, as left has the Probe Dock | [Hex-Zero GitHub](https://github.com/Alexander-T-Moss/Hex-Zero) |
