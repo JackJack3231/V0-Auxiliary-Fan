@@ -12,7 +12,7 @@ Since the [R1 release](#2023-08-15-R1-Release) there are now 3 mounting options:
 
 1. (Legacy) Clamp-Mount: this one just clamps the duct to the bottom extrusion. This was an easy way to secure the ducts, however the ducts were prone to come loose from vibrations and could tilt into the print volume, colliding with the toolhead. This version is no longer recommended.
 2. Screw-Mounts to secure the bottom and top of the ducts to the frame. These allow the most secure installation, however you will need preloaded M3 nuts in the slots of the extrusion (2 at the bottom and 2 at the top). Due to space constraints installing these Mounts (especially the top ones) can be rather difficult on the larger fan ducts with the frame assembled.
-3. Twist-Mounts that get inserted into the extrusion slot and twisted 90° to secure to the frame. These provide a very solid mount while not needing preloaded M3 nuts and therefore are the recommended installation method for already fully assembled printers. If these are too tight or too loose after installation you can adjust the CAD-Files to improve the mount, a [guide is provided in the docs folder](docs/CAD_Twist_Tightness.md).
+3. Twist-Mounts that get inserted into the extrusion slot and twisted 90° to secure to the frame. These provide a very solid mount while not needing preloaded M3 nuts and therefore are the recommended installation method for already fully assembled printers. If these are too tight or too loose after installation you can adjust the CAD-Files to improve the mount, a [guide is provided in the docs folder](docs/CAD_Twist_Tightness.md). There also is an alternative stronger version of the bottom twist mounts which don't rely on layer adhesion as much and should therefore be much stronger than the standard ones. The stronger mounts require 2 additional Heatsets and M3x12 screws.
 
 All of these mounting options use the same main duct bodies, so you could also mix and match as you want. For Example if you used a Nevermore filter before you could use the 2 M3 nuts in the bottom extrusion to secure the bottom of the duct with a screw mount and the top with the twist mounts.
 
@@ -71,6 +71,8 @@ Depending on your choice of mount and fan the BOM changes. The parts for the mou
 | Superglue | | only if using a 2 piece duct |
 | VHB-Tape | | for top mounts |
 
+**For the stronger twist mounts you will need 2 more Heatsets and M3x12 screws, so 5 Heatsets and 5 M3x12 screws in total.**
+
 BHCS can be substituted for SHCS.
 
 Additionally, you will need some Hardware to secure the fan. See the specific README of each version for a list of additionally required parts.
@@ -102,6 +104,8 @@ Following Fan Models were used in CAD:
 
 ### 2024-02-14
 - Add 12032 Hex-Zero variant
+- Add Stronger Bottom Twist Mount Variant. This does not rely on layer adhesion nearly as much as the standard version, so it should be a lot stronger. However, you will need 2 additional Heatsets and 2 M3x12 screws.
+- Moved Mounts to separate sub-folders for better organization
 
 ### 2023-12-23
 
