@@ -102,6 +102,9 @@ Following Fan Models were used in CAD:
 
 ## Changelog
 
+### 2024-04-07
+- Add WIP Dual 5015 duct
+
 ### 2024-02-14
 - Add 12032 Hex-Zero variant
 - Add Stronger Bottom Twist Mount Variant. This does not rely on layer adhesion nearly as much as the standard version, so it should be a lot stronger. However, you will need 2 additional Heatsets and 2 M3x12 screws.
